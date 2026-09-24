@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberGuard - Cyber Security Awareness</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>🛡️ CyberGuard</h1>
+    <p>Cyber Security Awareness Website</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#threats">Threats</a>
+    <a href="#password">Password Checker</a>
+    <a href="#tips">Security Tips</a>
+</nav>
+
+<section id="home" class="hero">
+    <h2>Stay Safe in the Digital World</h2>
+    <p>
+        Learn about cyber threats and protect your personal information
+        from online attacks.
+    </p>
+    <button onclick="showMessage()">Learn More</button>
+</section>
+
+<section id="threats">
+    <h2>⚠️ Common Cyber Threats</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>🎣 Phishing</h3>
+            <p>
+                Fake emails or messages designed to steal passwords
+                and personal information.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🦠 Malware</h3>
+            <p>
+                Malicious software that can damage systems or
+                steal sensitive information.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🔒 Ransomware</h3>
+            <p>
+                Malware that locks or encrypts files and demands
+                payment from the victim.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🐴 Trojan</h3>
+            <p>
+                A malicious program that appears to be legitimate
+                software.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="password">
+    <h2>🔑 Password Strength Checker</h2>
+
+    <input type="password" id="passwordInput"
+           placeholder="Enter your password">
+
+    <button onclick="checkPassword()">Check Password</button>
+
+    <p id="result"></p>
+</section>
+
+<section id="tips">
+    <h2>🛡️ Cyber Security Tips</h2>
+
+    <ul>
+        <li>Use strong and unique passwords.</li>
+        <li>Enable Two-Factor Authentication (2FA).</li>
+        <li>Do not click suspicious links.</li>
+        <li>Keep your software updated.</li>
+        <li>Do not share OTP or passwords.</li>
+        <li>Use trusted websites and applications.</li>
+    </ul>
+</section>
+
+<footer>
+    <p>© 2026 CyberGuard | Cyber Security Awareness</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
