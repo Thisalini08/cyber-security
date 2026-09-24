@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background: #020617;
+}
+
+header h1 {
+    color: #38bdf8;
+    font-size: 35px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 15px;
+    background: #1e293b;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #0f172a, #164e63);
+}
+
+.hero h2 {
+    font-size: 40px;
+    color: #38bdf8;
+}
+
+section {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 25px;
+    color: #38bdf8;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    background: #334155;
+}
+
+.card h3 {
+    color: #22d3ee;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 12px 25px;
+    margin: 15px;
+    border: none;
+    border-radius: 8px;
+    background: #0284c7;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #0369a1;
+}
+
+input {
+    width: 300px;
+    padding: 13px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+}
+
+#result {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+ul {
+    list-style-position: inside;
+    text-align: left;
+    max-width: 600px;
+    margin: auto;
+}
+
+li {
+    padding: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+}
+
+@media (max-width: 800px) {
+
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    input {
+        width: 90%;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+}
